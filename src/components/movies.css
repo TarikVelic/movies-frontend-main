@@ -1,0 +1,345 @@
+@import url(https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap);
+
+.bg-custom {
+  background-color: #191919;
+}
+
+* {
+  font-family: "Bruno Ace SC", cursive;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 31px;
+  font-weight: bold;
+  font-family: "Fira Sans";
+}
+
+.btn-custom {
+  background-color: #e50914 !important;
+  font-weight: 800 !important;
+  color: black !important;
+}
+
+.btn-collection {
+  max-width: 241px;
+  margin: 2em auto;
+}
+
+.img-card {
+  margin: 5px 0px;
+  transition: 0.1s;
+}
+.img-card:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.btn-collection-playing {
+  max-width: 110px;
+  margin: 2em auto;
+}
+#dateSelect {
+  text-transform: capitalize;
+}
+
+.navbar {
+  font-family: "Bruno Ace SC", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(45, 45, 45);
+  display: flex;
+  padding-right: 12%;
+  padding-left: 12%;
+}
+
+.navbar * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.navbar li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 10px;
+  overflow: hidden;
+  text-align: left; /* novi redak */
+}
+.navbar a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+.navbar a:before,
+.navbar a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.navbar a:before {
+  top: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #c0392b;
+}
+.navbar a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+}
+.navbar li:hover a,
+.navbar .current a {
+  transform: translateY(-100%);
+}
+/* Demo purposes only */
+body {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #212121;
+}
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+
+.LogOut {
+  color: white;
+  display: flex !important;
+  justify-content: flex-end; /* novi redak */
+  flex: 1; /* novi redak */
+}
+
+#movieTimes {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.btn-group {
+  padding-top: 15px;
+}
+
+.btn-secondary {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #212529;
+  border-radius: 7px;
+  padding: 8px 12px;
+  background: radial-gradient(circle, rgba(196, 40, 40, 1) 0%, rgba(54, 4, 14, 1) 100%);
+}
+.btn-secondary:hover {
+  background: radial-gradient(circle, rgb(219, 36, 36) 0%, rgba(139, 0, 0, 1) 100%);
+  /* Add your desired hover styles here */
+}
+.btn-secondary.active {
+  background: radial-gradient(circle, rgba(204, 20, 20, 0.863) 30%, rgb(126, 0, 25) 100%);
+  color: white;
+}
+
+.nastavihover:hover {
+  background: #1a5c1a;
+}
+
+.increment-button:hover {
+  background: #c0bfbf;
+}
+
+.decrement-button:hover {
+  background: #c0bfbf;
+}
+
+.close:hover {
+  background: #c0bfbf;
+}
+
+.odustani {
+  color: #fff;
+  background-color: #961c1c;
+  border-color: black;
+  padding: 2px 10px 2px 10px;
+}
+.odustani:hover {
+  background: #5e1414;
+}
+
+.potvrdi {
+  color: #fff;
+  background-color: #277427;
+  border-color: black;
+  padding: 2px 10px 2px 10px;
+}
+.potvrdi:hover {
+  background: #1d581d;
+}
+.projection-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projection-info div {
+  margin-bottom: 5px;
+}
+
+.form-control {
+  font-family: "Helvetica";
+}
+
+#DaySelect {
+  font-family: "Helvetica";
+}
+
+.films-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.film {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.filmovi {
+  width: 25%;
+  padding-bottom: 5px;
+}
+
+.movie-title {
+  font-family: "Bruno Ace SC", cursive;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.35s ease-out 0s;
+}
+
+.quantity {
+  padding: 9px;
+}
+
+.ticketQuantity {
+  padding: 9px;
+}
+
+.soon-text {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  color: green;
+}
+
+.navbar {
+  list-style-type: none;
+}
+
+.navbar-item {
+  margin: 0 10px;
+}
+
+.header-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.logoutbtn {
+  margin-right: 0;
+}
+
+/* Dodajte ove stilove u svoj CSS fajl */
+.email-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Boja zatamnjenja */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Postavite veći z-index kako bi bio iznad prvog moda */
+}
+
+.email-modal-content {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+.modal-content {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+
+.email-input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: "Helvetica";
+}
+
+.crvena {
+  color: red;
+}
+
+.movieImage {
+  width: 100%;
+  max-width: 300px; /* prilagodite širinu kontejnera prema potrebama */
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.logout-container {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .logout-container {
+    text-align: right;
+  }
+  .logoutbtn {
+    margin-right: 0;
+  }
+}
+
+.Toastify__toast--error {
+  font-family: "Helvetica", sans-serif;
+}
