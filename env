@@ -1,16 +1,1 @@
-.env file 
-
-DB_CONNECTION_STRING="mongodb+srv://kasapovicm:antcolony@cluster0.osfif7k.mongodb.net/?retryWrites=true&w=majority"
-JWT_SECRET="7123179192"
-PORT=5000
-SMTP_HOST=smtp.office365.com
-SMTP_PORT=587
-SMTP_SECURE=false
-SMTP_USER=project.pharaoh@hotmail.com
-SMTP_PASS=antcolony1
-FRONTEND_URL="http://localhost:3000"
-BASE_URL="http://localhost:"
-
-
-
 
